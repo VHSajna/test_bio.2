@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Parallax CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+</head>
+<body>
+    <div id="scene1">
+        <div data-depth="0.2"><img src="images/background1.jpg" alt="Background"></div>
+        <div data-depth="0.6"><img src="images/midground1.png" alt="Midground"></div>
+        <div data-depth="1.0"><img src="images/foreground1.png" alt="Foreground"></div>
+    </div>
+    <div class="content">
+        <h1>John Doe</h1>
+        <p>Software Engineer</p>
+        <h2>Profile</h2>
+        <p>Email: john.doe@example.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></p>
+        <p>GitHub: <a href="https://github.com/johndoe">github.com/johndoe</a></p>
+    </div>
+    
+    <div id="scene2">
+        <div data-depth="0.2"><img src="images/background2.jpg" alt="Background"></div>
+        <div data-depth="0.6"><img src="images/midground2.png" alt="Midground"></div>
+        <div data-depth="1.0"><img src="images/foreground2.png" alt="Foreground"></div>
+    </div>
+    <div class="content">
+        <h2>Experience</h2>
+        <h3>Software Engineer</h3>
+        <p>Example Company, 2020 - Present</p>
+        <ul>
+            <li>Developed and maintained web applications using JavaScript, HTML, and CSS.</li>
+            <li>Collaborated with cross-functional teams to deliver high-quality software solutions.</li>
+            <li>Implemented new features and fixed bugs based on user feedback.</li>
+        </ul>
+        <h3>Intern</h3>
+        <p>Another Example Company, Summer 2019</p>
+        <ul>
+            <li>Assisted in the development of a mobile application using React Native.</li>
+            <li>Participated in code reviews and team meetings.</li>
+            <li>Performed testing and debugging of software components.</li>
+        </ul>
+    </div>
+    
+    <div id="scene3">
+        <div data-depth="0.2"><img src="images/background3.jpg" alt="Background"></div>
+        <div data-depth="0.6"><img src="images/midground3.png" alt="Midground"></div>
+        <div data-depth="1.0"><img src="images/foreground3.png" alt="Foreground"></div>
+    </div>
+    <div class="content">
+        <h2>Education</h2>
+        <h3>Master of Science in Computer Science</h3>
+        <p>University of Example, 2018 - 2020</p>
+        <h3>Bachelor of Science in Information Technology</h3>
+        <p>Example University, 2014 - 2018</p>
+    </div>
+    
+    <div id="scene4">
+        <div data-depth="0.2"><img src="images/background4.jpg" alt="Background"></div>
+        <div data-depth="0.6"><img src="images/midground4.png" alt="Midground"></div>
+        <div data-depth="1.0"><img src="images/foreground4.png" alt="Foreground"></div>
+    </div>
+    <div class="content">
+        <h2>Presentations</h2>
+        <p>Here are some of the presentations I have delivered:</p>
+        
+        <div class="presentation">
+            <h3>Presentation 1</h3>
+            <img src="images/presentation1.jpg" alt="Presentation 1">
+            <p>Description of Presentation 1.</p>
+        </div>
+        
+        <div class="presentation">
+            <h3>Presentation 2</h3>
+            <img src="images/presentation2.jpg" alt="Presentation 2">
+            <p>Description of Presentation 2.</p>
+        </div>
+        
+        <div class="presentation">
+            <h3>Presentation 3</h3>
+            <img src="images/presentation3.jpg" alt="Presentation 3">
+            <p>Description of Presentation 3.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 John Doe</p>
+    </footer>
+    
+    <script>
+        var scene1 = document.getElementById('scene1');
+        var parallaxInstance1 = new Parallax(scene1);
+        
+        var scene2 = document.getElementById('scene2');
+        var parallaxInstance2 = new Parallax(scene2);
+        
+        var scene3 = document.getElementById('scene3');
+        var parallaxInstance3 = new Parallax(scene3);
+        
+        var scene4 = document.getElementById('scene4');
+        var parallaxInstance4 = new Parallax(scene4);
+    </script>
+</body>
+</html>
